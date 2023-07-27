@@ -28,7 +28,7 @@ table
     cursor: pointer;
 }
 
-.card-content {
+.card-content, .card {
     animation-name: zoom;
     animation-duration: 0.6s;
 }
