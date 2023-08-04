@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
+import psycopg2
+import os
 
 # Create app
 app = Flask(__name__)
@@ -28,3 +30,6 @@ def index():
 def username():
     Search = request.args.get("search")
     return render_template("search.html",search=Search)
+
+if __name__ == '__main__':
+    app.run(debug=True)
