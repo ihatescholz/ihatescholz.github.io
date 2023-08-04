@@ -5,6 +5,7 @@
   cursor: default;
   font-family: 'Poppins', sans-serif;
   --pfp-size: 50px;
+  --header-font: 1.5rem;
 }
 
 *{
@@ -12,6 +13,7 @@
   padding: 0;
   margin: 0;
 }
+
 .container{
   display: flex;
   flex-direction: column;
@@ -29,53 +31,27 @@
 /*HEADER SECTION*/
 
 .header-container{
-  display: grid;
-  grid-template-columns: repeat(2, minmax(400px, 1fr));
-  grid-template-rows: repeat(2, minmax(100px, 1fr));
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   padding: 10px;
+  gap: 20px;
 }
 
-.header-title{
-  grid-area: 1/1/2/2;
-
-  font-size: 3rem;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-
-.header-nav-container{
-  grid-area: 2/1/-1/2;
-
-  display: flex;
-  justify-content: baseline;
-  align-items: end;
-
-}
-
-.header-nav{
+.header-logo-container{
+  font-size: var(--header-font);
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 100px;
-
-  width: 100%;
-  height: 100px;
-
-  font-size: 1.5rem;
 }
 
-.header-nav>div{
-  cursor: pointer;
-}
 
 .header-search-container{
   display: flex;
   justify-content: center;
   align-items: center;
-
-  gap: 5px;
+  font-size: var(--header-font);
 }
 
 /*Search bar*/
@@ -89,11 +65,11 @@ label{
 }
 
 .header-user-container{
-  grid-area: 2/2/-1/-1;
+  flex: 1;
 
   display: flex;
   justify-content: end;
-  align-items: end;
+  align-items: center;
 }
 
 .header-user{
@@ -102,8 +78,6 @@ label{
   align-items: center;
 
   gap: 5px;
-  width: 150px;
-  height: 100px;
 
   font-size: 1.5rem;
 
@@ -125,6 +99,4 @@ label{
 }
 
 /*FEATURE SECTION*/
-.feature-container{
-  width: 100%;
-}
+
