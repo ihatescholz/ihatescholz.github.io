@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class="container">
+    <div class="header-container">
+      <div class="header-title">Project S</div>
+      <div class="header-nav-container">
+        <div class="header-nav">
+          <div class="header-home">Home</div>
+          <div class="header-search-container">
+            <form action="/search">
+              <label for="search">
+                <input type="submit" value="Search">
+              </label>
+              <input type="text" id="search" name="search">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="header-user-container">
+        <div class="header-user">
+          Username
+          <img class="pfp" src="/static/images/placeholder-pfp.jpg" alt="pfp">
+        </div>
+      </div>
+    </div>
+    <div class="feature-container"></div>
+    <div class="recipes-container"></div>
+  </div>
+  <script src="/static/script.js"></script>
+  {% endblock %}
