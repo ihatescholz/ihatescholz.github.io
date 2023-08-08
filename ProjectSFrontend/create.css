@@ -1,0 +1,113 @@
+:root{
+  cursor: default;
+  font-family: 'Poppins', sans-serif;
+  --pfp-size: 50px;
+  --header-font: 1.5rem;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+
+    /*Stretch container to fullscreen*/
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    overflow: scroll;
+}
+
+/*Create Post Section*/
+.create-container{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-text-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.create-img-container{
+  display: flex;
+  flex-direction: column;
+}
+
+/*Header Section*/
+.header-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+  gap: 20px;
+}
+
+.header-logo-container{
+  font-size: var(--header-font);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+
+.header-search-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--header-font);
+}
+
+/*Search bar*/
+label{
+  cursor: pointer;
+}
+
+#search{
+  border-radius: 8px;
+  text-indent: 2px;;
+}
+
+.header-user-container{
+  flex: 1;
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.header-user{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  gap: 5px;
+
+  font-size: 1.5rem;
+
+  cursor: pointer;
+}
+
+
+/*Makes pfp circle with image in center*/
+.pfp {
+  cursor: pointer;
+  display: inline-block;
+  width: var(--pfp-size);
+  height: var(--pfp-size);
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
