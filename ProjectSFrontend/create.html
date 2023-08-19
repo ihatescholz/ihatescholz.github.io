@@ -71,54 +71,56 @@
       </div>
   </div>
     <div class="create-container">
-      <form action="https://httpbin.org/post" class="create-form" method="post">
-      <div class="create-header-container">
-        <div class="create-header-title">
-          <label for="Title">Title: </label>
-          <input type="text" name="recipe-title" id="Title">
-        </div>
+      <div class="create-content">
+        <form action="https://httpbin.org/post" class="create-form" method="post">
+          <div class="create-header-container">
+            <div class="create-header-title">
+              <label for="Title">Title: </label>
+              <input type="text" name="recipe-title" id="Title">
+            </div>
+          </div>
+          <div class="create-img-container">
+            <label for="img">Upload Image:</label>
+            <input type="file" onchange="readURL(this);">
+            <img id="blah" src="#" alt="your image" />
+          </div>
+          <div class="create-tags-container">
+            <div class="create-cuisine-container">
+              <label for="cuisine">Cuisine</label>
+              <select name="cuisine" id="cuisine">
+                <option value="any">Any</option>
+                <option value="african">African</option>
+                <option value="american">American</option>
+                <option value="chinese">Chinese</option>
+                <option value="indian">Indian</option>
+                <option value="italian">Italian</option>
+                <option value="french">French</option>
+                <option value="japanese">Japanese</option>
+                <option value="mexican">Mexican</option>
+                <option value="middle-eastern">Middle Eastern</option>
+                <option value="thai">Thai</option>
+                <option value="vietnamese">Vietnamese</option>
+              </select>
+            </div>
+            <div class="create-restrictions-container">
+              <label for="resitrictions">Dietary Restrictions: </label>
+              <select name="diet" id="diet">
+                <option value="none">None</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="keto">Keto</option>
+              </select>
+            </div>
+          </div>
+          <div class="create-text-container">
+            <label for="Instructions">Instructions: </label>
+            <textarea name="instructions" id="instructions" cols="30" rows="10"></textarea>
+          </div>
+          <div class="create-footer-container">
+            <input type="submit" value="Post">
+          </div>
+          </form>
       </div>
-      <div class="create-img-container">
-        <label for="img">Upload Image:</label>
-        <input type="file" onchange="readURL(this);">
-        <img id="blah" src="#" alt="your image" />
-      </div>
-      <div class="create-tags-container">
-        <div class="create-cuisine-container">
-          <label for="cuisine">Cuisine</label>
-          <select name="cuisine" id="cuisine">
-            <option value="any">Any</option>
-            <option value="african">African</option>
-            <option value="american">American</option>
-            <option value="chinese">Chinese</option>
-            <option value="indian">Indian</option>
-            <option value="italian">Italian</option>
-            <option value="french">French</option>
-            <option value="japanese">Japanese</option>
-            <option value="mexican">Mexican</option>
-            <option value="middle-eastern">Middle Eastern</option>
-            <option value="thai">Thai</option>
-            <option value="vietnamese">Vietnamese</option>
-          </select>
-        </div>
-        <div class="create-restrictions-container">
-          <label for="resitrictions">Dietary Restrictions: </label>
-          <select name="diet" id="diet">
-            <option value="none">None</option>
-            <option value="vegetarian">Vegetarian</option>
-            <option value="vegan">Vegan</option>
-            <option value="keto">Keto</option>
-          </select>
-        </div>
-      </div>
-      <div class="create-text-container">
-        <label for="Instructions">Instructions: </label>
-        <textarea name="instructions" id="instructions" cols="30" rows="10"></textarea>
-      </div>
-      <div class="create-footer-container">
-        <input type="submit" value="Post">
-      </div>
-      </form>
     </div>
   </div>
   <!--Script for img upload preview-->

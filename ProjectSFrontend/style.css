@@ -37,6 +37,9 @@
 
   padding: 10px;
   gap: 20px;
+
+  background-color: aliceblue;
+  box-shadow: 0 4px 2px -2px gray;
 }
 
 .header-logo-container{
